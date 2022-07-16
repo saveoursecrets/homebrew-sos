@@ -4,8 +4,8 @@
 class Sos < Formula
   desc "Distributed, encrypted database for private secrets."
   homepage "https://github.com/saveoursecrets/library"
-  url "https://github.com/saveoursecrets/homebrew-sos/releases/download/v0.1.0-alpha1/sos-tools-macos-release-0.1.0-alpha1.tar.gz"
-  sha256 "2c4b042ec960f8ed62a8e3748c5f74a4b1a738194b079e6838c4841d6b3e9d56"
+  url "https://github.com/saveoursecrets/homebrew-sos/releases/download/v0.1.0/sos-tools-macos-release-0.1.0.tar.gz"
+  sha256 "bbf52611ab8be5db0c10fb532a2dece296935bf28043aa0b3c587c0955cad866"
   version "0.1.0"
 
   def install
