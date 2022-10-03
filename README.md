@@ -13,4 +13,5 @@ brew install sos
 
 ```
 brew uninstall sos
+brew untap saveoursecrets/sos
 ```
