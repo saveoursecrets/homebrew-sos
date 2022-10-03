@@ -4,9 +4,9 @@
 class Sos < Formula
   desc "Distributed, encrypted database for private secrets."
   homepage "https://github.com/saveoursecrets/library"
-  url "https://github.com/saveoursecrets/homebrew-sos/releases/download/v0.2.0/sos-tools-macos-release-0.2.0.tar.gz"
-  sha256 "ffa96c149a3b7a98e9480c6af468a35b65a72a2f989ff9e185d3b9d37b9c1142"
-  version "0.2.0"
+  url "https://github.com/saveoursecrets/homebrew-sos/releases/download/v0.3.0/sos-tools-macos-release-0.3.0.tar.gz"
+  sha256 "79041b2a0cf190132f303d6da7e5af450a4fbb36791f752a02c7778bd412bbd6"
+  version "0.3.0"
 
   def install
     if Hardware::CPU.arm?
