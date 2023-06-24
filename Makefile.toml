@@ -1,0 +1,32 @@
+[env]
+RUST_BACKTRACE = 0
+BINARIES = "sos"
+SOS_BUILD_DIR = "../sdk"
+
+[tasks.release-macos-arm]
+script = '''
+cd $SOS_BUILD_DIR
+cargo make release-macos-arm
+'''
+
+[tasks.release-macos-x86]
+script = '''
+cd $SOS_BUILD_DIR
+cargo make release-macos-x86
+'''
+
+[tasks.brew]
+script = '''
+rm -rf ./target
+mkdir -p ./target/{arm,x86}
+for bin in ${BINARIES}; do
+  cp $SOS_BUILD_DIR/target/x86_64-apple-darwin/release/$bin ./target/x86
+  cp $SOS_BUILD_DIR/target/aarch64-apple-darwin/release/$bin ./target/arm
+done
+
+cd target
+TARBALL=sos-cli-macos-release.tar.gz
+tar -czvf ../${TARBALL} ./x86 ./arm;
+shasum -a 256 ../${TARBALL}
+'''
+dependencies = ["release-macos-arm", "release-macos-x86"]
