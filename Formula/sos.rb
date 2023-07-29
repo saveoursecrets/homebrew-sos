@@ -1,3 +1,4 @@
+# Automatically generated, do not edit!
 class Sos < Formula
   version "0.5.1"
   desc "Distributed, encrypted database for private secrets."
