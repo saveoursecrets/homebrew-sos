@@ -7,6 +7,10 @@ class Sos < Formula
   homepage "https://saveoursecrets.com"
   license "GPL-3.0"
 
+  bin.install "sos"
+  bin.install "sos-server"
+  bin.install "sos-rendezvous"
+
   if Hardware::CPU.arm?
     sha256 "b7cc04b183bb63918434d7f39d9fa31aabe4ec481cc455bd39b3f9bf27ea7f02"
     url "https://releases.saveoursecrets.com/cli/macos/0.5.1/aarch64/saveoursecrets.zip"
