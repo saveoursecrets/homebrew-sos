@@ -25,7 +25,7 @@ fi
 echo "# Automatically generated, do not edit!" > sos-build.rb
 cat sos-template.rb >> sos-build.rb
 
-perl -pi -e "s/__CHANNEL__/$VERSION/g" sos-build.rb
+perl -pi -e "s/__CHANNEL__/$CHANNEL/g" sos-build.rb
 perl -pi -e "s/__VERSION__/$VERSION/g" sos-build.rb
 perl -pi -e "s/__ARM_SHA__/$ARM_SHA/g" sos-build.rb
 perl -pi -e "s/__X86_SHA__/$X86_SHA/g" sos-build.rb
