@@ -6,11 +6,11 @@ class Sos < Formula
   license "GPL-3.0"
 
   if Hardware::CPU.arm?
-    sha256 "b7cc04b183bb63918434d7f39d9fa31aabe4ec481cc455bd39b3f9bf27ea7f02"
-    url "https://releases.saveoursecrets.com/cli/macos/0.5.1/aarch64/saveoursecrets.zip"
+    sha256 "1729df8688824a8b7b85b7db7c66ad21ff4af734f6e2578b5e2b129d05a4a47f"
+    url "https://releases.saveoursecrets.com/0.5.1/cli/macos/0.5.1/aarch64/saveoursecrets.zip"
   else
-    sha256 "cd74a1cb232fac2783cc3905836c34a55331fc25289cc806344019557982d92d"
-    url "https://releases.saveoursecrets.com/cli/macos/0.5.1/x86_64/saveoursecrets.zip"
+    sha256 "9e645810255740e185731f5a854855d4eb1ba75cbf3e32732945c4c66dd0ac88"
+    url "https://releases.saveoursecrets.com/0.5.1/cli/macos/0.5.1/x86_64/saveoursecrets.zip"
   end
 
   def install
