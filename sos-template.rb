@@ -2,7 +2,7 @@ class Sos < Formula
   version "__VERSION__"
   desc "Distributed, encrypted database for private secrets."
   homepage "https://saveoursecrets.com"
-  license "GPL-3.0"
+  license "MIT or APACHE-2.0"
 
   if Hardware::CPU.arm?
     sha256 "__ARM_SHA__"
