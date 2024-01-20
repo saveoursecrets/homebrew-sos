@@ -15,6 +15,5 @@ class Sos < Formula
   def install
     bin.install "sos"
     bin.install "sos-server"
-    bin.install "sos-rendezvous"
   end
 end
