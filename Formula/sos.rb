@@ -1,16 +1,16 @@
 # Automatically generated, do not edit!
 class Sos < Formula
-  version "0.14.5"
+  version "0.14.6"
   desc "Distributed, encrypted database for private secrets."
   homepage "https://saveoursecrets.com"
   license "MIT or APACHE-2.0"
 
   if Hardware::CPU.arm?
-    sha256 "e602cad06ceddb52e0e98b815e2f7d00fe63b575287536417fd8808c88ae30d6"
-    url "https://releases.saveoursecrets.com/beta/cli/0.14.5/macos/aarch64/saveoursecrets.zip"
+    sha256 "9f963dd0726aa88697fb0935475133441de3da453a1f9892267dcb17edcf1b01"
+    url "https://releases.saveoursecrets.com/beta/cli/0.14.6/macos/aarch64/saveoursecrets.zip"
   else
-    sha256 "7b17c93a76970de7d2805192dc1beea2a9eadf08903c6b469ff45ca4b3220927"
-    url "https://releases.saveoursecrets.com/beta/cli/0.14.5/macos/x86_64/saveoursecrets.zip"
+    sha256 "434dcd4a425d482dc4a9d5998000384b0251e8311c6ff8c370e71ff93ef2a996"
+    url "https://releases.saveoursecrets.com/beta/cli/0.14.6/macos/x86_64/saveoursecrets.zip"
   end
 
   def install
