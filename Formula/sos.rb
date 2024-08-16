@@ -6,11 +6,11 @@ class Sos < Formula
   license "MIT or APACHE-2.0"
 
   if Hardware::CPU.arm?
-    sha256 "2ce9728ad037546df37b5eb8915b1ef8b8a35f17b715d0efa25ae198d1545d10"
-    url "https://releases.saveoursecrets.com/beta/cli/0.14.10/macos/aarch64/saveoursecrets.zip"
+    sha256 "b28038d75015c2e0affd9221fa81195b6067994e8160d2f3c1b291cc85606e31"
+    url "https://releases.saveoursecrets.com/stable/cli/0.14.10/macos/aarch64/saveoursecrets.zip"
   else
-    sha256 "8c45b0aa4c11177e5749c707a09f544ab3ef551d2c4743ddc08d3f8df52a7359"
-    url "https://releases.saveoursecrets.com/beta/cli/0.14.10/macos/x86_64/saveoursecrets.zip"
+    sha256 "60d8a84feb3bcbd03f2156eed611c79b0f187faeb974bad5487d5ba2fa159d09"
+    url "https://releases.saveoursecrets.com/stable/cli/0.14.10/macos/x86_64/saveoursecrets.zip"
   end
 
   def install
